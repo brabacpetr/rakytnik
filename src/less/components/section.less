@@ -1,0 +1,106 @@
+.section {
+    padding: 3em 2em 5em 2em;
+    height: 100%;
+    position: relative;
+
+    .section-heading {
+        font-size: 3em;
+        font-weight: 300;
+        color: @link-orange;  
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .article {
+        .article-heading {
+            font-size: 3em;
+            font-weight: 300;
+            color: @link-orange;  
+            text-align: center;
+            margin-top: 0;
+        } 
+
+        .article-heading-left {
+            text-align: left; 
+        }
+
+        .article-content {
+            font-size: 1.6em;
+            font-weight: 500; 
+            text-align: left;
+            line-height: 1.4em;
+            color: @link-black; 
+        }
+    }
+
+    .article-box {
+        background-color: rgba(165, 131, 120, .7); 
+        padding: 3.5em;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        
+        .article-heading {
+            color: @text-white; 
+            font-weight: 300;
+        }
+
+        .article-content {
+            font-style: italic; 
+
+            a {
+                font-weight: 700;
+                color: @text-black;
+            }
+        }
+
+        &:first {
+            margin-top: 0; 
+        }
+    }
+
+    .article-box + .article-box {
+        @media only screen and (min-width: @screen-desktop) {
+            margin-top: 42%; 
+        } 
+    }
+
+    .article-box:nth-child(even) {
+        @media only screen and (min-width: @screen-desktop) {
+            float: right;
+        }
+    }
+}
+
+.section-gray {
+    .section-heading {
+        position: absolute;
+        display: block;
+        background: @link-orange;
+
+        top: -1em;
+
+        font-weight: 300;
+        font-size: 3em;
+        line-height: 1.8em;
+        color: @text-white; 
+        text-align: center;
+    }
+}
+
+.rakytnik-image {
+    background: transparent url('../../img/rakytnik_sm.png') 0 0 no-repeat;
+    width: 260px;
+    height: 201px;
+    margin-bottom: 3em;
+
+    @media only screen and (min-width: @screen-tablet) {
+        margin-top: 3em;
+        background: transparent url('../../img/rakytnik_lg.png') 0 0 no-repeat;
+        width: 419px;
+        height: 323px;
+    }
+
+    @media only screen and (min-width: @screen-desktop) {
+        float: right;
+    }
+}

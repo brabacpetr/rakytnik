@@ -1,0 +1,100 @@
+.skrollr-desktop body {
+    height:100% !important;
+}
+
+.parallax-image-wrapper {
+    position:fixed;
+    left:0;
+    width:100%;
+    overflow:hidden;
+
+    &.skrollable-between {
+        .parallax-image {
+            display: block; 
+        } 
+    }
+    -webkit-transform: translateZ(0);-webkit-backface-visibility: hidden;-webkit-perspective: 1000;
+}
+
+.parallax-image-wrapper-100 {
+    height:100%;
+    top:-100%;
+}
+
+.parallax-image {
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    &.skrollable-between {
+        display: block; 
+    }
+    -webkit-transform: translateZ(0);-webkit-backface-visibility: hidden;-webkit-perspective: 1000;
+}
+
+.parallax-image-100 {
+    height:100%;
+    top:0;
+}
+
+.no-skrollr .parallax-image-wrapper {
+    display:none !important;
+}
+
+#skrollr-body {
+    height:100%;
+    overflow:visible;
+    position:relative;
+}
+
+.gap {
+    background:transparent center no-repeat;
+    background-size:cover;
+}
+
+.skrollr .gap {
+    background:transparent !important;
+}
+
+.gap-100 {
+    height:100%;
+}
+
+.parallax-image-experience {
+    background-image: url('../../img/experience_bg_sm.jpg'); 
+
+    @media only screen and (min-width: 375px) {
+        background-image: url('../../img/experience_bg_sm_m.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/experience_bg.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/experience_bg_l.jpg'); 
+        background-size: cover;
+    }
+}
+
+.parallax-image-footer {
+    background-image: url('../../img/footer_bg_sm.jpg'); 
+
+    @media only screen and (min-width: 375px) {
+        background-image: url('../../img/footer_bg_sm_m.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/footer_bg.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/footer_bg_l.jpg'); 
+        background-size: cover;
+    }
+}
