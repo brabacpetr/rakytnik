@@ -1,0 +1,29 @@
+.breadcrumbs {
+    padding-bottom: 0;
+
+    .breadcrumbs-content {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block; 
+            font-size: 1.4em;
+            color: @text-black;
+
+            a {
+                color: @link-orange;
+
+                &:before {
+                    display: inline-block;
+                    content: '>';
+                    margin-left: .2em;
+                    margin-right: .2em; 
+                } 
+            }
+        } 
+    }
+
+    @media only screen and (min-width: @screen-desktop) {
+        padding-bottom: 2em; 
+    }
+}

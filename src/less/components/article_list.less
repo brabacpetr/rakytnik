@@ -1,0 +1,58 @@
+.article-list {
+    article {
+        @media only screen and (min-width: @screen-tablet) {
+            header {
+                background: transparent url('../../img/article_icon.png') 100% 0 no-repeat;     
+            } 
+        }
+        
+        background: @background-gray; 
+        //padding: 2em 1em;
+        margin-bottom: 2.5em;
+
+        .article-image {
+            float: left; 
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+
+        .article-heading {
+            float: left;
+            font-size: 1.8em;
+            margin: 0;
+            padding: 0; 
+            font-weight: 300;
+            color: @background-orange;
+            width: 70%;
+
+            @media only screen and (min-width: @screen-tablet) {
+                width: 90%; 
+            }
+        }
+
+        .article-author, .article-content {
+            font-size: 1.4em;
+            color: @text-black; 
+        }
+
+        a {
+            color: @link-orange; 
+            font-size: 1.4em;
+        }
+
+        &:nth-child(even) {
+            background: @background-gray2; 
+        }
+
+        &:nth-child(odd) {
+            background: @background-gray; 
+        }
+    }
+
+    .pager {
+        .button {
+            padding-left: 1em;
+            padding-right: 1em; 
+        } 
+    }
+}

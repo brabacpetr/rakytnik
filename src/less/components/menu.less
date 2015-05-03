@@ -17,6 +17,21 @@
         margin-bottom: 4px;
     }
 
+    .menu-heading {
+        display: none;
+
+        @media only screen and (min-width: @screen-desktop) {
+            display: block;
+            padding: .5em 1em 0 1em;
+            font-size: 1.6em;
+            line-height: 1em; 
+            margin: 0;
+            margin-left: 15em;
+            font-weight: 300;
+            color: @text-gray;
+        } 
+    }
+
     .menu-content {
         background: white; 
         margin: 7em 3em 0 3em;
@@ -29,12 +44,12 @@
         @media only screen and (min-width: @screen-desktop) {
             margin-top: 0; 
             padding: 1em;
-            padding-top: 3em;
+            padding-top: 1em;
             display: block;
             height: 6.6em;
 
             .box-shadow(none);
-            background: transparent url('../../img/menu_bg_l.jpg') 38% 50% no-repeat; 
+            background: transparent url('../../img/menu_bg_l.jpg') 38% -20px no-repeat; 
         }
 
         .menu-content-item {
@@ -54,6 +69,7 @@
                 color: @link-orange; 
                 padding: .2em .8em;
                 border: 1px solid @text-white; 
+                text-decoration: none;
 
                 &:active {
                     color: @link-black; 
@@ -81,5 +97,13 @@
             border: 1px solid @link-orange; 
             .border-radius(3px);
         }
+    }
+}
+
+.experience {
+    @media only screen and (min-width: @screen-desktop) {
+        .menu-container {
+            display: table-header-group; 
+        } 
     }
 }

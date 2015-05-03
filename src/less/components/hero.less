@@ -11,7 +11,7 @@
 
     @media only screen and (min-width: @screen-mobile) {
         background-image: url('../../img/hero_bg.jpg'); 
-        height: 804px; 
+        height: 594px; 
     }
 
     @media only screen and (min-width: @screen-tablet) {
@@ -22,16 +22,22 @@
 
     .hero-heading {
         position: absolute;
-        bottom: .5em;
+        top: .5em;
         color: @text-white;
         font-size: 4em;
         line-height: 1em;
         text-align: center; 
         margin: 0;
         width: 100%;
+        text-shadow: 2px 4px 2px rgba(0, 0, 0, .7);
 
         @media only screen and (min-width: @screen-desktop) {
             font-size: 6em; 
+        }
+
+        @media only screen and (min-width: @screen-tablet) {
+            top: auto;
+            bottom: .5em; 
         }
     }
 
@@ -74,6 +80,7 @@
             font-size: 1.4em;
             top: 44%;
             left: 20%;
+            text-decoration: none;
         }
     }
 
@@ -106,7 +113,7 @@
     }
 
     .hero-image-small-1 {
-        top: 1.5em; 
+        top: 11.5em; 
         left: 1.2em;
         background: transparent url('../../img/hero_small_1_130.jpg') 0 0 no-repeat;
 
@@ -118,7 +125,7 @@
             background-image: url('../../img/hero_small_1_150.jpg');
         }
         @media only screen and (min-width: @screen-mobile) {
-            top: 4em;
+            top: 8em;
             left: 2.2em; 
             background-image: url('../../img/hero_small_1_190.jpg');
         }
@@ -133,7 +140,7 @@
         }
     }
     .hero-image-small-2 {
-        top: 1.5em; 
+        top: 11.5em; 
         right: 1.2em;
         background: transparent url('../../img/hero_small_2_130.jpg') 0 0 no-repeat;
 
@@ -145,7 +152,7 @@
             background-image: url('../../img/hero_small_2_150.jpg');
         }
         @media only screen and (min-width: @screen-mobile) {
-            top: 4em;
+            top: 8em;
             right: 2.2em; 
             background-image: url('../../img/hero_small_2_190.jpg');
         }
@@ -161,7 +168,7 @@
         }
     }
     .hero-image-small-3 {
-        top: 16em;
+        top: 26em;
         left: 1.2em; 
         background: transparent url('../../img/hero_small_3_130.jpg') 0 0 no-repeat;
 
@@ -192,7 +199,7 @@
         }
     }
     .hero-image-small-4 {
-        top: 16em;
+        top: 26em;
         right: 1.2em; 
         background: transparent url('../../img/hero_small_4_130.jpg') 0 0 no-repeat;
 
@@ -223,6 +230,29 @@
 
         @media only screen and (min-width: @screen-desktop) {
         }
+    }
+
+    .hero-image-box {
+        position: absolute;
+        background: rgba(253, 142, 6, 0.85); 
+        padding: 2.5em;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+
+        h1 {
+            font-size: 2.7em;
+            line-height: 1em;
+            font-weight: 300;
+            padding: 0
+            margin: 0 0 15px 0;
+            color: white;
+        }
+
+        @media only screen and (min-width: @screen-desktop) {
+            bottom: 35%; 
+        }
+
     }
 }
 

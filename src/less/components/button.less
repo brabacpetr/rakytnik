@@ -2,8 +2,7 @@
     font-size: 1.8em;
     line-height: 1.4em;
     display: inline-block;
-    padding-top: .3em;
-    padding-bottom: .3em;
+    padding: .3em;
     margin-bottom: 0; 
     font-weight: 300;
     text-align: center;
@@ -20,7 +19,7 @@
     background-color: @button-brown; 
     color: @text-white;
 
-
+    text-decoration: none;
 }
 
 body a.button:active, body a.button:visited, body a.button:focus, body a.button:hover {
@@ -30,4 +29,17 @@ body a.button:active, body a.button:visited, body a.button:focus, body a.button:
 
 .button-orange {
     background-color: @button-orange; 
+}
+
+.button-brown {
+    background-color: @button-brown2;
+}
+
+.button-gray {
+    color: @text-black;
+    background-color: @background-gray3;
+
+    &:hover {
+        background-color: @button-orange; 
+    }
 }
