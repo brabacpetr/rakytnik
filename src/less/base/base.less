@@ -19,10 +19,34 @@ strong {
 
 .full-width {
     width: 100%;
+
+    @media only screen and (min-width: @screen-tablet) and (max-width: 1024px) {
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 9999px;
+        }
+
+        &:before {
+            left: 100%;
+        }
+
+        &:after {
+            right: 100%;
+        }
+    }
 }
 
 .full-width-gray {
     background-color: @background-gray; 
+
+    @media only screen and (min-width: @screen-tablet) and (max-width: 1024px) {
+        &:before, &:after {
+            background-color: @background-gray; 
+        } 
+    }
 }
 
 .full-width-orange {
@@ -30,6 +54,12 @@ strong {
     
     .tags-box {
         background: transparent; 
+    }
+
+    @media only screen and (min-width: @screen-tablet) and (max-width: 1024px) {
+        &:before, &:after {
+            background-color: @background-orange;
+        } 
     }
 }
 

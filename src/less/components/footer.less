@@ -1,9 +1,20 @@
 .footer {
     width: 100%;
     position: relative;
+    background: transparent url('../../img/footer_bg_sm.jpg') 0 0 no-repeat;
+    background-size: cover;
 
     @media only screen and (max-width: 375px) {
         padding-bottom: 10em; 
+        background-image: url('../../img/footer_bg_sm_m.jpg');
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/footer_bg.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/footer_bg_l.jpg'); 
     }
 
     .section-heading {
@@ -80,4 +91,6 @@
 
 .lt-ie9 .footer {
     background: transparent url('../../img/footer_bg_l.jpg') 0 0 repeat-y;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/footer_bg_l.jpg',sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/footer_bg_l.jpg',sizingMethod='scale')";
 }

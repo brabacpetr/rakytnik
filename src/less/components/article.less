@@ -1,0 +1,89 @@
+.article-page {
+
+    .box-tags-footer {
+        margin-bottom: 3.5em;
+
+        @media only screen and (min-width: @screen-desktop) {
+            display: block; 
+            margin-top: 1.785em;
+        }
+    }
+
+    article {
+        padding-top: 3.0357em;
+        padding-bottom: 1.25em; 
+
+        @media only screen and (min-width: @screen-desktop) {
+            padding-top: 1.785em; 
+            padding-bottom: 1em;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+        } 
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: 300; 
+        }
+
+        h3 {
+            font-size: 1.6em;
+            font-size: 400; 
+        }
+
+        p {
+            font-size: 1.4em;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .list {
+            padding-left: 1em; 
+
+            .list {
+                padding-left: 1em; 
+
+                li:before {
+                    color: @background-brown; 
+                }
+
+                li {
+                    font-size: .625em; 
+                    line-height: 1.4em;
+                }
+            }
+        }
+
+        .list li {
+            list-style-type: none;
+            color: @text-black; 
+            padding-left: 1em; 
+            text-indent: -.7em;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .list li:before {
+            content: "• ";
+            color: @link-orange; 
+            position: relative;
+            left: -1em;
+        }
+    }
+}
+
+.article-heading {
+    width: 100%;
+    font-size: 2.8em;
+    color: @link-orange; 
+    text-align: center;
+    font-weight: 300;
+
+    @media only screen and (min-width: @screen-desktop) {
+        width: 66.666666667%; 
+        text-align: left;
+        text-decoration: underline;
+    }
+}

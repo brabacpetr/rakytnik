@@ -1,4 +1,6 @@
 .article-list {
+    padding: 0;
+
     article {
         @media only screen and (min-width: @screen-tablet) {
             header {
@@ -9,6 +11,25 @@
         background: @background-gray; 
         //padding: 2em 1em;
         margin-bottom: 2.5em;
+
+        @media only screen and (min-width: @screen-tablet) and (max-width: 1024px) {
+            &:before, &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 9999px;
+            }
+
+            &:before {
+                left: 100%;
+            }
+
+            &:after {
+                right: 100%;
+            }
+        }
+
 
         .article-image {
             float: left; 
@@ -42,10 +63,22 @@
 
         &:nth-child(even) {
             background: @background-gray2; 
+
+            @media only screen and (min-width: @screen-tablet) and (max-width: 1024px) {
+                &:before, &:after {
+                    background: @background-gray2; 
+                } 
+            }
         }
 
         &:nth-child(odd) {
             background: @background-gray; 
+
+            @media only screen and (min-width: @screen-tablet) and (max-width: 1024px) {
+                &:before, &:after {
+                    background: @background-gray; 
+                } 
+            }
         }
     }
 
