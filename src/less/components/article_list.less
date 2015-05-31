@@ -46,8 +46,12 @@
             color: @background-orange;
             width: 70%;
 
-            @media only screen and (min-width: @screen-tablet) {
+            @media only screen and (min-width: @screen-tablet) and (max-width: 1024px) {
                 width: 90%; 
+            }
+
+            @media only screen and (min-width: @screen-desktop) {
+                width: 85%; 
             }
         }
 
@@ -87,5 +91,93 @@
             padding-left: 1em;
             padding-right: 1em; 
         } 
+    }
+}
+
+.article-list-dictionary {
+    .article-content {
+        font-style: italic; 
+    }    
+
+    .dictionary-item {
+        padding-left: 2.5em; 
+
+        &:first-child {
+            padding-left: 0; 
+        }
+    }
+
+    article {
+        &:nth-child(even) {
+            background: @background-gray; 
+
+            @media only screen and (min-width: @screen-tablet) and (max-width: 1024px) {
+                &:before, &:after {
+                    background: @background-gray; 
+                } 
+            }
+        }
+        
+        .article-heading {
+            text-decoration: none;
+            float: none; 
+            width: auto;
+            text-align: left; 
+        }
+    }
+}
+
+.article-list-articles {
+    article {
+        .article-image {
+            width: 250px;
+            margin: 0 auto; 
+            float: none;
+            margin-bottom: 1.25em;
+
+            img {
+                max-width: 100%; 
+            }
+
+            @media only screen and (min-width: @screen-tablet) {
+                width: 41.66666667%;
+                float: left; 
+            }
+        } 
+
+        .article-heading {
+            float: none;
+            width: auto;
+            margin-bottom: 1.25em;
+
+            @media only screen and (min-width: @screen-tablet) {
+                width: 58.33333333%;
+                float: right; 
+                padding-left: 30px;
+                text-align: left; 
+            }
+        }
+
+        .article-content {
+            @media only screen and (min-width: @screen-tablet) {
+                width: 58.33333333%;
+                float: right;
+                padding-left: 30px;
+            }
+
+            a {
+                font-size: 1em; 
+            }
+
+            font-style: italic;
+
+            
+            margin: 0; 
+           
+        }
+    }
+
+    article.section {
+        padding-bottom: 3em; 
     }
 }

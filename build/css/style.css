@@ -1487,9 +1487,14 @@ body a.button:hover {
   color: #fd8e06;
   width: 70%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .article-list article .article-heading {
     width: 90%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .article-list article .article-heading {
+    width: 85%;
   }
 }
 .article-list article .article-author,
@@ -1523,6 +1528,75 @@ body a.button:hover {
   padding-left: 1em;
   padding-right: 1em;
 }
+.article-list-dictionary .article-content {
+  font-style: italic;
+}
+.article-list-dictionary .dictionary-item {
+  padding-left: 2.5em;
+}
+.article-list-dictionary .dictionary-item:first-child {
+  padding-left: 0;
+}
+.article-list-dictionary article:nth-child(even) {
+  background: #f8f8f8;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .article-list-dictionary article:nth-child(even):before,
+  .article-list-dictionary article:nth-child(even):after {
+    background: #f8f8f8;
+  }
+}
+.article-list-dictionary article .article-heading {
+  text-decoration: none;
+  float: none;
+  width: auto;
+  text-align: left;
+}
+.article-list-articles article .article-image {
+  width: 250px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 1.25em;
+}
+.article-list-articles article .article-image img {
+  max-width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .article-list-articles article .article-image {
+    width: 41.66666667%;
+    float: left;
+  }
+}
+.article-list-articles article .article-heading {
+  float: none;
+  width: auto;
+  margin-bottom: 1.25em;
+}
+@media only screen and (min-width: 768px) {
+  .article-list-articles article .article-heading {
+    width: 58.33333333%;
+    float: right;
+    padding-left: 30px;
+    text-align: left;
+  }
+}
+.article-list-articles article .article-content {
+  font-style: italic;
+  margin: 0;
+}
+@media only screen and (min-width: 768px) {
+  .article-list-articles article .article-content {
+    width: 58.33333333%;
+    float: right;
+    padding-left: 30px;
+  }
+}
+.article-list-articles article .article-content a {
+  font-size: 1em;
+}
+.article-list-articles article.section {
+  padding-bottom: 3em;
+}
 .box-add-experience {
   margin-top: 4em;
   text-align: center;
@@ -1539,13 +1613,27 @@ body a.button:hover {
   font-style: italic;
   color: #000000;
 }
+.experience .box .section {
+  padding-bottom: 2em;
+}
+.experience .box .article {
+  padding-left: 0;
+  padding-right: 0;
+}
+.experience .box-tags-footer {
+  margin-bottom: 3em;
+}
 @media only screen and (min-width: 1025px) {
   .experience .box {
-    width: 33.3333333%;
+    width: 30.3333333%;
     float: right;
     margin-bottom: 2.5em;
   }
   .experience .box .container {
+    width: auto;
+  }
+  .experience .box .article-heading {
+    text-decoration: none;
     width: auto;
   }
   .experience .box-tags-header {
