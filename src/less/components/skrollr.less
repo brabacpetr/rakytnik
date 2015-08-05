@@ -13,6 +13,19 @@
             display: block; 
         } 
     }
+
+    &.skrollable-before {
+        .parallax-image {
+            display: none; 
+        } 
+    }
+
+    &.skrollable-after {
+        .parallax-image {
+            display: none; 
+        } 
+    }
+
     -webkit-transform: translateZ(0);-webkit-backface-visibility: hidden;-webkit-perspective: 1000;
 }
 
@@ -78,6 +91,40 @@
 
     @media only screen and (min-width: @screen-tablet) {
         background-image: url('../../img/experience_bg_l.jpg'); 
+        background-size: cover;
+    }
+}
+
+.parallax-image-indikace {
+    background-image: url('../../img/indikace_bg_sm.jpg'); 
+
+    @media only screen and (min-width: 375px) {
+        background-image: url('../../img/indikace_bg_sm_m.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/indikace_bg.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/indikace_bg_l.jpg'); 
+        background-size: cover;
+    }
+}
+
+.parallax-image-indikace-2 {
+    background-image: url('../../img/indikace_bg_2_sm.jpg'); 
+
+    @media only screen and (min-width: 375px) {
+        background-image: url('../../img/indikace_bg_2_sm_m.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/indikace_bg_2.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/indikace_bg_2_l.jpg'); 
         background-size: cover;
     }
 }

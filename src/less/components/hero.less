@@ -241,7 +241,7 @@
         width: 100%;
 
         h1 {
-            font-size: 2.7em;
+            font-size: 2.5em;
             line-height: 1em;
             font-weight: 300;
             padding: 0
@@ -253,6 +253,240 @@
             bottom: 35%; 
         }
 
+    }
+}
+
+.hero-image-indikace {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background: transparent url('../../img/hero_indikace_sm.jpg') 0 0 no-repeat;
+    background-size: cover;
+    height: auto;
+
+    @media only screen and (max-width: 1199px) {
+        .container {
+            width: auto; 
+            margin: 0;
+        } 
+    }
+
+    @media only screen and (min-width: 375px) {
+        background-image: url('../../img/hero_indikace_sm_m.jpg'); 
+        height: 594px;
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/hero_indikace_sm.jpg'); 
+        height: 594px; 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/hero_indikace_l.jpg'); 
+        background-size: cover;
+        height: 573px;
+    }
+
+    @media only screen and (min-width: @screen-desktop) {
+        background-image: url('../../img/hero_indikace.jpg'); 
+        background-size: cover;
+        height: 573px;
+    }
+
+    .hero-image-box {
+        position: static; 
+        padding: 18px 0 13px 0;
+
+        h1 {
+            margin: 0; 
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 70%; 
+            margin: 0 auto;
+            position: relative;
+            z-index: 100;
+            background: @link-orange;
+        }
+    }
+
+    .hero-article-heading {
+        font-size: 2em;
+        color: @text-black; 
+        text-align: center;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    .section {
+        background-color: rgba(248, 248, 248, .8); 
+        padding-top: 3em;
+        padding-bottom: 1em;
+        height: auto;
+
+        a {
+            color: @link-orange;  
+            font-style: normal;
+        }
+
+        p {
+            font-style: italic; 
+            font-weight: 700;
+            font-size: 1.4em;
+        }
+
+        
+
+        @media only screen and (min-width: 1200px) {
+            margin-top: -28px;     
+            padding-top: 4.4em;
+
+            .with-border {
+                border-right: 1px solid @link-orange;  
+            }
+        }
+    }
+
+    .tags-box {
+        padding: 0em 2em 5em 2em; 
+        background-color: rgba(248, 248, 248, .8); 
+    }
+}
+
+.hero-image-indikace-imunita {
+    background: transparent url('../../img/hero_imunita_sm.jpg') -210px 100px no-repeat;
+    background-size: cover;
+
+    @media only screen and (min-width: 375px) {
+        background-image: url('../../img/hero_imunita_sm_m.jpg'); 
+        height: 594px;
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/hero_imunita_sm.jpg'); 
+        height: 594px; 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/hero_imunita.jpg'); 
+        background-position: -135px 0;
+        background-size: auto;
+        height: 573px;
+    }
+}
+
+.hero-image-pestovani {
+    background: transparent url('../../img/hero_pestovani_sm.jpg') -500px 0 no-repeat;
+    background-size: cover;
+
+    @media only screen and (min-width: 375px) {
+        background-image: url('../../img/hero_pestovani_sm_m.jpg'); 
+        background-position: -300px 0 ;
+        height: 594px;
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/hero_pestovani_sm.jpg'); 
+        height: 594px; 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/hero_pestovani.jpg'); 
+        background-position: 0 0 ;
+        height: 860px;
+    }
+
+    @media only screen and (min-width: @screen-desktop) {
+        background-image: url('../../img/hero_pestovani_l.jpg'); 
+        background-position: 0 0 ;
+        height: 745px;
+    }
+
+    .section {
+        padding-top: 1em; 
+
+        .hero-article-heading {
+            font-size: 2.8em;
+            color: @link-orange; 
+            text-decoration: underline;
+        }
+
+        h3 {
+            font-size: 2em; 
+            color: @link-orange;
+            font-weight: 300;
+            margin-top: .3em;
+            margin-bottom: .3em;
+        }
+
+        p {
+            font-style: normal; 
+            font-size: 1.4em;
+            font-weight: 500;
+            line-height: 1.6em;
+            color: #000;
+
+            a {
+                font-style: italic; 
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .section {
+            margin-top: 0; 
+        }
+    }
+}
+
+.hero-image-indikace-zazivani {
+    background: transparent url('../../img/hero_zazivani_sm.jpg') -457px 0 no-repeat;
+    background-size: cover;
+
+    @media only screen and (min-width: 375px) {
+        background-position: -150px;
+        height: 594px;
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/hero_zazivani_sm.jpg'); 
+        height: 594px; 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/hero_zazivani.jpg'); 
+        background-position: -135px 0;
+        background-size: auto;
+        height: 573px;
+    }
+
+    @media only screen and (min-width: @screen-desktop) {
+        background-position: -170px 0; 
+    }
+}
+
+.hero-image-indikace-srdce {
+    background: transparent url('../../img/hero_srdce_sm.jpg') -220px 0 no-repeat;
+    background-size: cover;
+
+    @media only screen and (min-width: 375px) {
+        background-position: 0px 0;
+        height: 594px;
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/hero_srdce_sm.jpg'); 
+        height: 594px; 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/hero_srdce.jpg'); 
+        background-position: 0 0;
+        background-size: auto;
+        height: 573px;
+    }
+
+    @media only screen and (min-width: @screen-desktop) {
+        background-position: 0 0; 
     }
 }
 

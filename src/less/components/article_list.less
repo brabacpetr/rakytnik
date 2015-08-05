@@ -53,11 +53,28 @@
             @media only screen and (min-width: @screen-desktop) {
                 width: 85%; 
             }
+
+            a {
+                font-size: 1em; 
+            }
         }
 
         .article-author, .article-content {
             font-size: 1.4em;
             color: @text-black; 
+
+            .text-orange {
+                color: @link-orange;  
+                font-style: normal;
+            }
+        }
+
+        .article-content-indent {
+            text-indent: 3em; 
+        }
+
+        .article-content-italic {
+            font-style: italic; 
         }
 
         a {
@@ -91,6 +108,26 @@
             padding-left: 1em;
             padding-right: 1em; 
         } 
+    }
+
+    .article-question {
+        padding-bottom: 0; 
+        margin-bottom: 5em;
+    }
+
+    .article-question:before {
+        display: block;
+        content: '';
+        width: 50px;
+        height: 50px;
+        background: transparent url('../../img/question_icon.png') 0 0 no-repeat !important; 
+        position: absolute;
+        top: -25px;
+        left: 45%;
+    }
+
+    .article-question:after {
+        display: none; 
     }
 }
 
