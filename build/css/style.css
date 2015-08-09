@@ -1252,6 +1252,9 @@ a {
 .list li span {
   color: #000000;
 }
+.list li a {
+  color: #fd8e06;
+}
 .list .empty {
   list-style-type: none;
 }
