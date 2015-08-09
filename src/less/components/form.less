@@ -1,0 +1,123 @@
+.form-brown {
+    .row {
+        width: 100%; 
+        margin: 20px 0;
+
+        input[type="text"], textarea {
+            width: 100%; 
+        }
+
+        input, textarea {
+            background-color: #fd9f2b;
+            background-color: rgba(253, 159, 43, .7);
+            border: 0;
+            .border-radius(10px); 
+            padding: 15px 20px 15px 20px;
+            color: #000;
+            font-style: italic;
+            font-size: 1.4em;
+            line-height: 1em;
+            resize: none;
+        }
+
+        ::-webkit-input-placeholder {
+            padding-top: 5px; 
+            color: lighten(#000, 30%);
+            line-height: 1em;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+            padding-top: 5px; 
+            color: lighten(#000, 30%);
+            line-height: 1em;
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+            padding-top: 5px; 
+            color: lighten(#000, 30%);
+            line-height: 1em;
+        }
+
+        :-ms-input-placeholder {  
+            padding-top: 5px; 
+            color: lighten(#000, 30%);
+            line-height: 1em;
+        }
+
+        label {
+            font-size: 1.4em; 
+            font-style: italic;
+            color: #000;
+
+            margin-left: 15px;
+        }
+
+        label input[type="checkbox"] {
+            display: none; 
+        }
+
+        label input[type="checkbox"]+span {
+            display: inline-block;
+            background-color: #fd9f2b;
+            background-color: rgba(253, 159, 43, .7);
+            border: 0;
+            .border-radius(5px); 
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+
+            i {
+                display: none; 
+            }
+        }
+
+        label input[type="checkbox"]:checked+span i {
+            display: inline; 
+            font-size: 1.4em;
+            margin-left: 4px;
+        }
+
+        .inline {
+            width: auto !important;
+            display: inline-block; 
+            max-width: 30%;
+
+            @media only screen and (min-width: 768px) {
+                max-width: 18%; 
+            }
+
+            @media only screen and (min-width: 1024px) {
+                max-width: 25%; 
+            }
+        }
+
+        .file-upload {
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+            padding: 10px 25px;
+            display: inline-block;
+
+            font-size: 1.4em;
+            line-height: 1.2em;
+
+            @media only screen and (min-width: 768px) {
+                max-width: 40%;
+            }
+        }
+
+        .file-upload input.upload {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+    }
+
+
+}

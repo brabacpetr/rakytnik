@@ -10,4 +10,10 @@
         items: 1
          
     });
+
+    $(document).ready(function() {
+        $('.tooltip').tooltipster({
+
+        });
+    })
 })();

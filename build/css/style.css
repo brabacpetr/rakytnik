@@ -373,6 +373,34 @@ a {
     bottom: 35%;
   }
 }
+.hero-image-zkusenosti {
+  background: transparent url('../../img/hero_zkusenosti_bg_sm.jpg') 0 0 no-repeat;
+  background-size: cover;
+}
+@media only screen and (min-width: 375px) {
+  .hero-image-zkusenosti {
+    background-image: url('../../img/hero_zkusenosti_bg_sm_m.jpg');
+  }
+}
+@media only screen and (min-width: 480px) {
+  .hero-image-zkusenosti {
+    background-image: url('../../img/hero_zkusenosti_bg.jpg');
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-image-zkusenosti {
+    background-image: url('../../img/hero_zkusenosti_bg_l.jpg');
+  }
+}
+.hero-image-slovnik {
+  background-image: url('../../img/zkusenosti_form_bg_2.jpg');
+  background-size: cover;
+}
+@media only screen and (min-width: 768px) {
+  .hero-image-slovnik {
+    background-image: url('../../img/zkusenosti_form_bg_2_l.jpg');
+  }
+}
 .hero-image-indikace {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -488,33 +516,25 @@ a {
   }
 }
 .hero-image-pestovani {
-  background: transparent url('../../img/hero_pestovani_sm.jpg') -500px 0 no-repeat;
-  background-size: cover;
+  background: transparent;
 }
 @media only screen and (min-width: 375px) {
   .hero-image-pestovani {
-    background-image: url('../../img/hero_pestovani_sm_m.jpg');
-    background-position: -300px 0;
     height: 594px;
   }
 }
 @media only screen and (min-width: 480px) {
   .hero-image-pestovani {
-    background-image: url('../../img/hero_pestovani_sm.jpg');
     height: 594px;
   }
 }
 @media only screen and (min-width: 768px) {
   .hero-image-pestovani {
-    background-image: url('../../img/hero_pestovani.jpg');
-    background-position: 0 0 ;
     height: 860px;
   }
 }
 @media only screen and (min-width: 1025px) {
   .hero-image-pestovani {
-    background-image: url('../../img/hero_pestovani_l.jpg');
-    background-position: 0 0 ;
     height: 745px;
   }
 }
@@ -1317,6 +1337,9 @@ a {
 .section .article-box-orange .button {
   background-color: #a66a00;
 }
+.section .article-box-white {
+  background-color: rgba(237, 237, 237, 0.8);
+}
 .section .buttons-center {
   text-align: center;
 }
@@ -1358,6 +1381,13 @@ a {
   .section-indikace .with-padding {
     padding-left: 2.5em;
   }
+}
+.pestovani .section-recepty article .article-heading {
+  font-size: 1.4em;
+  text-align: left;
+}
+.pestovani .section-recepty article .article-content {
+  margin-bottom: 36px;
 }
 .rakytnik-image {
   background: transparent url('../../img/rakytnik_sm.png') 0 0 no-repeat;
@@ -1407,8 +1437,22 @@ a {
   font-size: 2.6em;
   font-weight: 300;
 }
+.pestovani .parallax-transparent .section {
+  padding-bottom: 0;
+}
+.pestovani #pestovani-2 .section {
+  padding-top: 0;
+}
+.questions h1.article-heading {
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+}
 .parallax {
   background-color: #ffffff;
+}
+.parallax-transparent {
+  background: transparent;
 }
 .parallax-bg {
   background-attachment: scroll;
@@ -1429,6 +1473,25 @@ a {
   .parallax-bg-all-about {
     background-image: url('../../img/all_about_sm_m.jpg');
     padding-top: 32.6em;
+  }
+}
+.parallax-bg-pestovani-text {
+  background-image: url('../../img/pestovani_text_temp.jpg');
+  padding-top: 25em;
+}
+@media only screen and (min-width: 375px) {
+  .parallax-bg-pestovani-text {
+    padding-top: 38.3em;
+  }
+}
+.parallax-bg-pestovani-text-2 {
+  background-image: url('../../img/pestovani_text_2_sm.jpg');
+  padding-top: 25em;
+}
+@media only screen and (min-width: 375px) {
+  .parallax-bg-pestovani-text-2 {
+    background-image: url('../../img/pestovani_text_2_sm_m.jpg');
+    padding-top: 38.3em;
   }
 }
 .parallax-bg-indikace {
@@ -1477,6 +1540,9 @@ a {
 }
 .container-gray {
   background: #f8f8f8;
+}
+.container-white {
+  background: #fff;
 }
 .container-overlay {
   background: rgba(248, 248, 248, 0.9);
@@ -1752,6 +1818,62 @@ body a.button:hover {
   .parallax-image-footer {
     background-image: url('../../img/footer_bg_l.jpg');
     background-size: cover;
+  }
+}
+.parallax-image-pestovani {
+  background-image: url('../../img/hero_pestovani_sm.jpg');
+}
+@media only screen and (min-width: 375px) {
+  .parallax-image-pestovani {
+    background-image: url('../../img/hero_pestovani_sm_m.jpg');
+  }
+}
+@media only screen and (min-width: 480px) {
+  .parallax-image-pestovani {
+    background-image: url('../../img/hero_pestovani.jpg');
+  }
+}
+@media only screen and (min-width: 768px) {
+  .parallax-image-pestovani {
+    background-image: url('../../img/hero_pestovani_l.jpg');
+    background-size: cover;
+  }
+}
+.parallax-image-pestovani-2 {
+  background-image: url('../../img/pestovani_bg_sm.jpg');
+}
+@media only screen and (min-width: 375px) {
+  .parallax-image-pestovani-2 {
+    background-image: url('../../img/pestovani_bg_sm_m.jpg');
+  }
+}
+@media only screen and (min-width: 480px) {
+  .parallax-image-pestovani-2 {
+    background-image: url('../../img/pestovani_bg.jpg');
+  }
+}
+@media only screen and (min-width: 768px) {
+  .parallax-image-pestovani-2 {
+    background-image: url('../../img/pestovani_bg_l.jpg');
+    background-size: contain;
+  }
+}
+.parallax-image-zkusenosti-form {
+  background-image: url('../../img/zkusenosti_form_bg.jpg');
+  background-size: cover;
+}
+@media only screen and (min-width: 768px) {
+  .parallax-image-zkusenosti-form {
+    background-image: url('../../img/zkusenosti_form_bg_l.jpg');
+  }
+}
+.parallax-image-zkusenosti-form-2 {
+  background-image: url('../../img/zkusenosti_form_bg_2.jpg');
+  background-size: cover;
+}
+@media only screen and (min-width: 768px) {
+  .parallax-image-zkusenosti-form-2 {
+    background-image: url('../../img/zkusenosti_form_bg_2_l.jpg');
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -2044,6 +2166,76 @@ body a.button:hover {
     margin-top: 0;
   }
 }
+.questions .box-tags-footer {
+  display: block;
+}
+.questions .box-tags-footer .tags-box {
+  padding: 0;
+}
+.questions .box-tags-footer h3 {
+  font-size: 2.6em;
+  color: #fff;
+  font-weight: 300;
+  padding-left: 0;
+}
+.questions .box-tags-footer .button {
+  margin-bottom: 1.5em;
+}
+@media only scree and (min-width: 768px) {
+  .questions .box-tags-footer .button {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .questions .box-tags-footer {
+    background-color: #fd8e06;
+  }
+  .questions .box-tags-footer:before,
+  .questions .box-tags-footer:after,
+  .questions .box-tags-footer .tags-box {
+    background-color: #fd8e06;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .questions .box-tags-footer .button {
+    display: none;
+  }
+  .questions .box-tags-footer h3 {
+    display: none;
+  }
+}
+.questions .tags-full {
+  display: none;
+}
+.questions .tags-full .tags-box {
+  padding: 0;
+}
+.questions .tags-full h3 {
+  font-size: 2.6em;
+  color: #fff;
+  font-weight: 300;
+  padding-left: 0;
+}
+.questions .tags-full .button {
+  margin-top: 1.5em;
+}
+@media only screen and (min-width: 1200px) {
+  .questions .tags-full {
+    display: block;
+  }
+}
+.questions .tags-full-header {
+  display: none;
+}
+.questions .tags-full-header .button {
+  margin-top: 0;
+}
+@media only screen and (min-width: 1200px) {
+  .questions .tags-full-header {
+    display: block;
+  }
+}
 .article-page .box-tags-footer {
   margin-bottom: 3.5em;
 }
@@ -2128,6 +2320,21 @@ body a.button:hover {
     text-decoration: none;
   }
 }
+.pestovani .article-heading-black {
+  color: #000;
+}
+.pestovani .article-heading-underlined {
+  text-decoration: underline;
+}
+.pestovani .parallax-transparent .article-heading {
+  margin-bottom: 2em;
+}
+#zkusenosti-form .section-form .article-heading {
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  width: auto;
+}
 .section .owl-carousel article .article-heading {
   font-size: 2em;
   font-weight: 300;
@@ -2167,4 +2374,386 @@ body a.button:hover {
 }
 .section .owl-dots {
   margin-bottom: 1.5em;
+}
+.form-brown .row {
+  width: 100%;
+  margin: 20px 0;
+}
+.form-brown .row input[type="text"],
+.form-brown .row textarea {
+  width: 100%;
+}
+.form-brown .row input,
+.form-brown .row textarea {
+  background-color: #fd9f2b;
+  background-color: rgba(253, 159, 43, 0.7);
+  border: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 15px 20px 15px 20px;
+  color: #000;
+  font-style: italic;
+  font-size: 1.4em;
+  line-height: 1em;
+  resize: none;
+}
+.form-brown .row ::-webkit-input-placeholder {
+  padding-top: 5px;
+  color: #4d4d4d;
+  line-height: 1em;
+}
+.form-brown .row :-moz-placeholder {
+  /* Firefox 18- */
+  padding-top: 5px;
+  color: #4d4d4d;
+  line-height: 1em;
+}
+.form-brown .row ::-moz-placeholder {
+  /* Firefox 19+ */
+  padding-top: 5px;
+  color: #4d4d4d;
+  line-height: 1em;
+}
+.form-brown .row :-ms-input-placeholder {
+  padding-top: 5px;
+  color: #4d4d4d;
+  line-height: 1em;
+}
+.form-brown .row label {
+  font-size: 1.4em;
+  font-style: italic;
+  color: #000;
+  margin-left: 15px;
+}
+.form-brown .row label input[type="checkbox"] {
+  display: none;
+}
+.form-brown .row label input[type="checkbox"] + span {
+  display: inline-block;
+  background-color: #fd9f2b;
+  background-color: rgba(253, 159, 43, 0.7);
+  border: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.form-brown .row label input[type="checkbox"] + span i {
+  display: none;
+}
+.form-brown .row label input[type="checkbox"]:checked + span i {
+  display: inline;
+  font-size: 1.4em;
+  margin-left: 4px;
+}
+.form-brown .row .inline {
+  width: auto !important;
+  display: inline-block;
+  max-width: 30%;
+}
+@media only screen and (min-width: 768px) {
+  .form-brown .row .inline {
+    max-width: 18%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .form-brown .row .inline {
+    max-width: 25%;
+  }
+}
+.form-brown .row .file-upload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px 25px;
+  display: inline-block;
+  font-size: 1.4em;
+  line-height: 1.2em;
+}
+@media only screen and (min-width: 768px) {
+  .form-brown .row .file-upload {
+    max-width: 40%;
+  }
+}
+.form-brown .row .file-upload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* This is the default Tooltipster theme (feel free to modify or duplicate and create multiple themes!): */
+.tooltipster-default {
+  border-radius: 5px;
+  background: #d7d7d7;
+  color: #000;
+}
+/* Use this next selector to style things like font-size and line-height: */
+.tooltipster-default .tooltipster-content {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 8px 10px;
+  overflow: hidden;
+}
+/* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
+.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {
+  /* border-color: ... !important; */
+}
+/* If you're using the icon option, use this next selector to style them */
+.tooltipster-icon {
+  cursor: help;
+  margin-left: 4px;
+}
+/* This is the base styling required to make all Tooltipsters work */
+.tooltipster-base {
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+  pointer-events: none;
+  width: auto;
+  overflow: visible;
+}
+.tooltipster-base .tooltipster-content {
+  overflow: hidden;
+}
+/* These next classes handle the styles for the little arrow attached to the tooltip. By default, the arrow will inherit the same colors and border as what is set on the main tooltip itself. */
+.tooltipster-arrow {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.tooltipster-arrow span,
+.tooltipster-arrow-border {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.tooltipster-arrow-top span,
+.tooltipster-arrow-top-right span,
+.tooltipster-arrow-top-left span {
+  border-left: 8px solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-top: 8px solid;
+  bottom: -7px;
+}
+.tooltipster-arrow-top .tooltipster-arrow-border,
+.tooltipster-arrow-top-right .tooltipster-arrow-border,
+.tooltipster-arrow-top-left .tooltipster-arrow-border {
+  border-left: 9px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  border-top: 9px solid;
+  bottom: -7px;
+}
+.tooltipster-arrow-bottom span,
+.tooltipster-arrow-bottom-right span,
+.tooltipster-arrow-bottom-left span {
+  border-left: 8px solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-bottom: 8px solid;
+  top: -7px;
+}
+.tooltipster-arrow-bottom .tooltipster-arrow-border,
+.tooltipster-arrow-bottom-right .tooltipster-arrow-border,
+.tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+  border-left: 9px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  border-bottom: 9px solid;
+  top: -7px;
+}
+.tooltipster-arrow-top span,
+.tooltipster-arrow-top .tooltipster-arrow-border,
+.tooltipster-arrow-bottom span,
+.tooltipster-arrow-bottom .tooltipster-arrow-border {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.tooltipster-arrow-top-left span,
+.tooltipster-arrow-bottom-left span {
+  left: 6px;
+}
+.tooltipster-arrow-top-left .tooltipster-arrow-border,
+.tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+  left: 5px;
+}
+.tooltipster-arrow-top-right span,
+.tooltipster-arrow-bottom-right span {
+  right: 6px;
+}
+.tooltipster-arrow-top-right .tooltipster-arrow-border,
+.tooltipster-arrow-bottom-right .tooltipster-arrow-border {
+  right: 5px;
+}
+.tooltipster-arrow-left span,
+.tooltipster-arrow-left .tooltipster-arrow-border {
+  border-top: 8px solid transparent !important;
+  border-bottom: 8px solid transparent !important;
+  border-left: 8px solid;
+  top: 50%;
+  margin-top: -7px;
+  right: -7px;
+}
+.tooltipster-arrow-left .tooltipster-arrow-border {
+  border-top: 9px solid transparent !important;
+  border-bottom: 9px solid transparent !important;
+  border-left: 9px solid;
+  margin-top: -8px;
+}
+.tooltipster-arrow-right span,
+.tooltipster-arrow-right .tooltipster-arrow-border {
+  border-top: 8px solid transparent !important;
+  border-bottom: 8px solid transparent !important;
+  border-right: 8px solid;
+  top: 50%;
+  margin-top: -7px;
+  left: -7px;
+}
+.tooltipster-arrow-right .tooltipster-arrow-border {
+  border-top: 9px solid transparent !important;
+  border-bottom: 9px solid transparent !important;
+  border-right: 9px solid;
+  margin-top: -8px;
+}
+/* Some CSS magic for the awesome animations - feel free to make your own custom animations and reference it in your Tooltipster settings! */
+.tooltipster-fade {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+.tooltipster-fade-show {
+  opacity: 1;
+}
+.tooltipster-grow {
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+  -webkit-backface-visibility: hidden;
+}
+.tooltipster-grow-show {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+.tooltipster-swing {
+  opacity: 0;
+  -webkit-transform: rotateZ(4deg);
+  -moz-transform: rotateZ(4deg);
+  -o-transform: rotateZ(4deg);
+  -ms-transform: rotateZ(4deg);
+  transform: rotateZ(4deg);
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+}
+.tooltipster-swing-show {
+  opacity: 1;
+  -webkit-transform: rotateZ(0deg);
+  -moz-transform: rotateZ(0deg);
+  -o-transform: rotateZ(0deg);
+  -ms-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
+  -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -moz-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -ms-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -o-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+}
+.tooltipster-fall {
+  top: 0;
+  -webkit-transition-property: top;
+  -moz-transition-property: top;
+  -o-transition-property: top;
+  -ms-transition-property: top;
+  transition-property: top;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+.tooltipster-fall.tooltipster-dying {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  top: 0px !important;
+  opacity: 0;
+}
+.tooltipster-slide {
+  left: -40px;
+  -webkit-transition-property: left;
+  -moz-transition-property: left;
+  -o-transition-property: left;
+  -ms-transition-property: left;
+  transition-property: left;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+.tooltipster-slide.tooltipster-dying {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  left: 0px !important;
+  opacity: 0;
+}
+/* CSS transition for when contenting is changing in a tooltip that is still open. The only properties that will NOT transition are: width, height, top, and left */
+.tooltipster-content-changing {
+  opacity: 0.5;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }

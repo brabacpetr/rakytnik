@@ -256,6 +256,32 @@
     }
 }
 
+.hero-image-zkusenosti {
+    background: transparent url('../../img/hero_zkusenosti_bg_sm.jpg') 0 0 no-repeat;
+    background-size: cover;
+
+    @media only screen and (min-width: 375px) {
+        background-image: url('../../img/hero_zkusenosti_bg_sm_m.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-mobile) {
+        background-image: url('../../img/hero_zkusenosti_bg.jpg'); 
+    }
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/hero_zkusenosti_bg_l.jpg'); 
+    }
+}
+
+.hero-image-slovnik {
+    background-image: url('../../img/zkusenosti_form_bg_2.jpg'); 
+    background-size: cover;
+
+    @media only screen and (min-width: @screen-tablet) {
+        background-image: url('../../img/zkusenosti_form_bg_2_l.jpg'); 
+    }
+}
+
 .hero-image-indikace {
     padding-top: 3em;
     padding-bottom: 3em;
@@ -375,31 +401,33 @@
 }
 
 .hero-image-pestovani {
-    background: transparent url('../../img/hero_pestovani_sm.jpg') -500px 0 no-repeat;
-    background-size: cover;
+    background: transparent;
+    //background: transparent url('../../img/hero_pestovani_sm.jpg') -500px 0 no-repeat;
+    //background-size: cover;
 
     @media only screen and (min-width: 375px) {
-        background-image: url('../../img/hero_pestovani_sm_m.jpg'); 
-        background-position: -300px 0 ;
+        //background-image: url('../../img/hero_pestovani_sm_m.jpg'); 
+        //background-position: -300px 0 ;
         height: 594px;
     }
 
     @media only screen and (min-width: @screen-mobile) {
-        background-image: url('../../img/hero_pestovani_sm.jpg'); 
+        //background-image: url('../../img/hero_pestovani_sm.jpg'); 
         height: 594px; 
     }
 
     @media only screen and (min-width: @screen-tablet) {
-        background-image: url('../../img/hero_pestovani.jpg'); 
-        background-position: 0 0 ;
+        //background-image: url('../../img/hero_pestovani.jpg'); 
+        //background-position: 0 0 ;
         height: 860px;
     }
 
     @media only screen and (min-width: @screen-desktop) {
-        background-image: url('../../img/hero_pestovani_l.jpg'); 
-        background-position: 0 0 ;
+        //background-image: url('../../img/hero_pestovani_l.jpg'); 
+        //background-position: 0 0 ;
         height: 745px;
     }
+    
 
     .section {
         padding-top: 1em; 

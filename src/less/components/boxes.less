@@ -65,3 +65,87 @@
         }
     }
 }
+
+.questions {
+    .box-tags-footer {
+        display: block; 
+
+        .tags-box {
+            padding: 0; 
+        }
+
+        h3 {
+            font-size: 2.6em; 
+            color: #fff;
+            font-weight: 300;
+            padding-left: 0;
+        }
+
+        .button {
+            margin-bottom: 1.5em; 
+        }
+
+        @media only scree and (min-width: 768px) {
+            .button {
+                margin-top: 1.5em; 
+                margin-bottom: 0;
+            }
+        }
+
+
+        @media only screen and (max-width: 1199px) {
+            background-color: @background-orange;
+            &:before, &:after, .tags-box {
+                background-color: @background-orange;
+            } 
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .button {
+                display: none; 
+            } 
+
+            h3 {
+                display: none; 
+            }
+        }
+    }
+
+    
+
+    .tags-full {
+        display: none;
+
+        .tags-box {
+            padding: 0; 
+        }
+
+        h3 {
+            font-size: 2.6em; 
+            color: #fff;
+            font-weight: 300;
+            padding-left: 0;
+        }
+
+        .button {
+            margin-top: 1.5em; 
+        }
+
+        @media only screen and (min-width: 1200px) {
+            display: block; 
+        }
+    }
+
+    .tags-full-header {
+        display: none;
+
+        .button {
+            margin-top: 0; 
+        } 
+
+
+        @media only screen and (min-width: 1200px) {
+            display: block; 
+        }
+    }
+}
